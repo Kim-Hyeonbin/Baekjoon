@@ -8,14 +8,15 @@ prime_number_count = 0
 
 for n in nums:
 
-    isprime = True
-
     if n == 1:
         continue
 
-    for i in range(2, n):
+    isprime = True
+
+    for i in range(2, int(n**0.5) + 1):
         if n % i == 0:
             isprime = False
+            break
 
     if isprime:
         prime_number_count += 1
