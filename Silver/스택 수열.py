@@ -14,7 +14,7 @@ for _ in range(n):
         next += 1
         result += "+"
 
-    if stack[-1] <= target:
+    if stack[-1] == target:
         del stack[-1]
         result += "-"
     elif stack[-1] > target:
